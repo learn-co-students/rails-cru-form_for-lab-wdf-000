@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'navigate' do
   before do
-    @genre = Genre.create(name: "My Genre")
+    @genre = Genre.create(name: "My Genre 2")
   end
 
   it 'shows the name on the show page in a h1 tag' do
