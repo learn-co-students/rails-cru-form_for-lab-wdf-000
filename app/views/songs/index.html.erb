@@ -1,0 +1,5 @@
+<h1>All Songs</h1>
+
+<% Song.all.each do |song| %>
+  <p style="border-bottom: 2px solid red">Name: <%= song.name %></p>
+<% end %>
