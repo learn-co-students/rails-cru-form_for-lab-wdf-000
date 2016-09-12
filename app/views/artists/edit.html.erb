@@ -1,0 +1,10 @@
+<h1>Artist Form</h1>
+<%= form_tag artist_path(@artist), method: "put" do %>
+
+<label>Artist Name</label>
+<%= text_field_tag :'artist[name]', @artist.name %><br>
+<label>Artist Bio</label>
+<%= text_field_tag :'artist[bio]', @artist.bio %><br>
+
+<%= submit_tag "Update Artist" %>
+<% end %>

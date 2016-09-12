@@ -1,0 +1,14 @@
+<h1>Song Form</h1>
+<%= form_tag song_path(@song), method: "put" do %>
+
+<label>Song Name</label>
+<%= text_field_tag :'song[name]', @song.name %><br>
+
+<label>Song Artist</label>
+<%= text_field_tag :'song[artist_id]', @song.artist_id %><br>
+
+<label>Song Genre</label>
+<%= text_field_tag :'song[genre_id]', @song.genre_id %><br>
+
+<%= submit_tag "Update Song" %>
+<% end %>
