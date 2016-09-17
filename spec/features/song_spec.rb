@@ -8,7 +8,8 @@ describe 'navigate' do
   end
 
   it 'shows the name on the show page in a h1 tag' do
-    visit song_path(@song.id)
+    visit song_path(@song)
+    # /songs/1
     expect(page).to have_css("h1", text: "My Song")
   end
 

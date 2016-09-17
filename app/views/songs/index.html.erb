@@ -1,0 +1,4 @@
+<h1>Songs</h1>
+<% @songs.all.each.with_index(1) do |song, i| %>
+<%= i %>. <p><%= song.name %></p>
+<% end %>
